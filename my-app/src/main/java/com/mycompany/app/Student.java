@@ -5,10 +5,6 @@ public class Student {
     private int age = 24;
     private String name = "Peter";
 
-    public String getMatricultionNumber() {
-        return matricultionNumber;
-    }
-
     public void setMatricutionNumber(String matricultionNumber) {
         this.matricultionNumber = matricultionNumber;
     }
