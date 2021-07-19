@@ -22,7 +22,6 @@ public class Student {
         this.matricultionNumber = matricultionNumber;
     }
 
-
     public int getAge() {
         return age;
     }
@@ -44,19 +43,6 @@ public class Student {
         return this.name = name;
     }
 
-    private void giveName() {
-    }
-
-    public boolean giveName(String name) {
-
-        return false;
-    }
-
-    public boolean giveAge(int age) {
-
-        return false;
-    }
-
     @Override
     public int hashCode() {
         return Objects.hash(name);
@@ -70,9 +56,13 @@ public class Student {
         return Objects.equals(name, student.name);
     }
 
+    @Override
     public String toString() {
-        return getName() + "  " + getAge() + "  " + getMatriculationNumber();
+        return "Student{" +
+                "age=" + getAge() +
+                ", name='" + getName() + '\'' +
+                ", matricultionNumber='" + getMatriculationNumber() + '\'' +
+                '}';
     }
-
 
 }
