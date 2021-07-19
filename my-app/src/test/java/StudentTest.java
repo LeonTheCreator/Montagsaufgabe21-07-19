@@ -1,3 +1,4 @@
+import com.mycompany.app.Student;
 import org.junit.Test;
 import org.junit.jupiter.api.*;
 
@@ -17,7 +18,7 @@ public class StudentTest {
     }
 
     @Test
-    @DisplayName("Age cannot be empty!")
+    @DisplayName("Age cannot be negative!")
     public void ageTest() {
         //GIVEN
         int age = -42;
@@ -29,7 +30,7 @@ public class StudentTest {
 
     @Test
     @DisplayName("Matriukations numere cannot be empty!")
-    public void matriculationNumber() {
+    public void matriculationNumberTest() {
         //GIVEN
         String matricultionNumber = null;
         //WHEN

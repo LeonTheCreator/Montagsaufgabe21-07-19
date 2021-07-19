@@ -1,3 +1,5 @@
+package com.mycompany.app;
+
 public class Student {
 
     private int age = 24;
@@ -32,26 +34,17 @@ public class Student {
     }
 
     public static boolean giveName(String name) {
-        Student student1 = new Student();
-        if (student1.getName().equals("")) {
-            System.out.println("bitte name eingeben!");
-        }
+
         return false;
     }
 
     public static boolean giveAge(int age) {
-        Student student1 = new Student();
-        if (student1.getAge() < 0) {
-            System.out.println("bitte name eingeben!");
-        }
+
         return false;
     }
 
     public static boolean matriculationNumber(String age) {
-        Student student1 = new Student();
-        if (student1.getMatricultionNumber().equals("")) {
-            System.out.println("bitte name eingeben!");
-        }
+
         return false;
     }
 }
