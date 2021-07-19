@@ -1,5 +1,7 @@
 package com.mycompany.model;
 
+import java.util.Objects;
+
 public class Student {
 
     private int age = 24;
@@ -55,10 +57,22 @@ public class Student {
         return false;
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return Objects.equals(name, student.name);
+    }
+
     public String toString() {
         return getName() + "  " + getAge() + "  " + getMatriculationNumber();
     }
-
 
 
 }

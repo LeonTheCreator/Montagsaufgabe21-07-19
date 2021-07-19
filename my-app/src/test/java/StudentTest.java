@@ -45,4 +45,29 @@ public class StudentTest {
         assertEquals(matricultionNumber, actual);
     }
 
+    @Test
+    @DisplayName("Students with the same name are equal")
+    public void studentsAreEqualTest() {
+        //GIVEN
+        Student student = new Student("Jonas", 24, "957864");
+        Student student1 = new Student("Jonas", 24, "957864");
+        //WHEN
+        boolean actual = student.equals(student1);
+        //THEN
+        boolean expected = true;
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    @DisplayName("Students with different name are not equal")
+    public void studentsAreDefferentTest() {
+        //GIVEN
+        Student student = new Student("Jonas", 24, "957864");
+        Student student1 = new Student("Peter", 24, "957864");
+        //WHEN
+        boolean actual = student.equals(student1);
+        //THEN
+        assertFalse(actual);
+    }
+
 }
