@@ -1,22 +1,41 @@
-import junit.framework.TestCase;
-import org.junit.Assert;
 import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.*;
 
 import static org.junit.Assert.*;
 
 public class StudentTest {
 
     @Test
-    @DisplayName("Name can not be empty!")
-    public void nameTest(){
-
+    @DisplayName("Name cannot be empty!")
+    public void nameTest() {
         //GIVEN
         String name = "";
         //WHEN
-        boolean actual = Main.giveName(name);
+        boolean actual = Student.giveName(name);
         //THEN
         assertFalse(actual);
-
     }
+
+    @Test
+    @DisplayName("Age cannot be empty!")
+    public void ageTest() {
+        //GIVEN
+        String age = "";
+        //WHEN
+        boolean actual = Student.giveAge(age);
+        //THEN
+        assertFalse(actual);
+    }
+
+    @Test
+    @DisplayName("Matriukations numere cannot be empty!")
+    public void matriculationNumber() {
+        //GIVEN
+        String matricultionNumber = null;
+        //WHEN
+        boolean actual = Student.matriculationNumber(matricultionNumber);
+        //THEN
+        assertFalse(actual);
+    }
+
 }

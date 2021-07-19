@@ -1,19 +1,23 @@
 public class Student {
-    /*
-    * Alter
-    * Name
-    * Matrikelnummer
-    * */
-    private int alter = 24;
+
+    private int age = 24;
     private String name = "Peter";
-    private int matrikelNummer = 212727;
+    private String matricultionNumber = "212727";
 
-
-    int getAlter(){
-        return alter;
+    public int getAge() {
+        return age;
     }
-    int setzeAlter(int alter){
-        return this.alter = alter;
+
+    public int setAge(int age) {
+        return this.age = age;
+    }
+
+    public String getMatricultionNumber() {
+        return matricultionNumber;
+    }
+
+    public String setMatriultionNumber(String matriultionNumber) {
+        return this.matricultionNumber = matriultionNumber;
     }
 
     public String getName() {
@@ -24,18 +28,30 @@ public class Student {
         return this.name = name;
     }
 
-
-    public int getMatrikelNummer() {
-        return matrikelNummer;
+    private static void giveName() {
     }
 
-    public int setMatrikelNummer(int matrikelNummer) {
-        return this.matrikelNummer = matrikelNummer;
+    public static boolean giveName(String name) {
+        Student student1 = new Student();
+        if (student1.getName().equals("")) {
+            System.out.println("bitte name eingeben!");
+        }
+        return false;
     }
 
+    public static boolean giveAge(String age) {
+        Student Student1 = new Student();
+        if (Student1.getAge() == 0) {
+            System.out.println("bitte name eingeben!");
+        }
+        return false;
+    }
 
-
-
-
-
+    public static boolean matriculationNumber(String age) {
+        Student Student1 = new Student();
+        if (Student1.getMatricultionNumber().equals("")) {
+            System.out.println("bitte name eingeben!");
+        }
+        return false;
+    }
 }
