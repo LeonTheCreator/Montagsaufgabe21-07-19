@@ -40,16 +40,16 @@ public class Student {
     }
 
     public static boolean giveAge(String age) {
-        Student Student1 = new Student();
-        if (Student1.getAge() == 0) {
+        Student student1 = new Student();
+        if (student1.getAge() == 0) {
             System.out.println("bitte name eingeben!");
         }
         return false;
     }
 
     public static boolean matriculationNumber(String age) {
-        Student Student1 = new Student();
-        if (Student1.getMatricultionNumber().equals("")) {
+        Student student1 = new Student();
+        if (student1.getMatricultionNumber().equals("")) {
             System.out.println("bitte name eingeben!");
         }
         return false;
