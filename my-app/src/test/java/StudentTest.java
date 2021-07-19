@@ -12,9 +12,11 @@ public class StudentTest {
         //GIVEN
         String name = "";
         //WHEN
-        boolean actual = Student.giveName(name);
+        Student student = new Student();
+        student.setName(name);
+        String actual = student.getName();
         //THEN
-        assertFalse(actual);
+        assertEquals(name, actual);
     }
 
     @Test
@@ -23,20 +25,24 @@ public class StudentTest {
         //GIVEN
         int age = -42;
         //WHEN
-        boolean actual = Student.giveAge(age);
+        Student student = new Student();
+        student.setAge(age);
+        int actual = student.getAge();
         //THEN
-        assertFalse(actual);
+        assertEquals(age, actual);
     }
 
     @Test
     @DisplayName("Matriukations numere cannot be empty!")
     public void matriculationNumberTest() {
         //GIVEN
-        String matricultionNumber = null;
+        String matricultionNumber = "";
         //WHEN
-        boolean actual = Student.matriculationNumber(matricultionNumber);
+        Student student = new Student();
+        student.setMatricutionNumber(matricultionNumber);
+        String actual = student.getMatriculationNumber();
         //THEN
-        assertFalse(actual);
+        assertEquals(matricultionNumber, actual);
     }
 
 }

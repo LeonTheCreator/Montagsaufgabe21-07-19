@@ -4,6 +4,15 @@ public class Student {
 
     private int age = 24;
     private String name = "Peter";
+
+    public String getMatricultionNumber() {
+        return matricultionNumber;
+    }
+
+    public void setMatricutionNumber(String matricultionNumber) {
+        this.matricultionNumber = matricultionNumber;
+    }
+
     private String matricultionNumber = "212727";
 
     public int getAge() {
@@ -14,13 +23,10 @@ public class Student {
         return this.age = age;
     }
 
-    public String getMatricultionNumber() {
+    public String getMatriculationNumber() {
         return matricultionNumber;
     }
 
-    public String setMatriultionNumber(String matriultionNumber) {
-        return this.matricultionNumber = matriultionNumber;
-    }
 
     public String getName() {
         return name;
@@ -30,21 +36,17 @@ public class Student {
         return this.name = name;
     }
 
-    private static void giveName() {
+    private void giveName() {
     }
 
-    public static boolean giveName(String name) {
+    public boolean giveName(String name) {
 
         return false;
     }
 
-    public static boolean giveAge(int age) {
+    public boolean giveAge(int age) {
 
         return false;
     }
 
-    public static boolean matriculationNumber(String age) {
-
-        return false;
-    }
 }
