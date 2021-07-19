@@ -1,4 +1,4 @@
-import com.mycompany.app.Student;
+import com.mycompany.model.Student;
 import org.junit.Test;
 import org.junit.jupiter.api.*;
 

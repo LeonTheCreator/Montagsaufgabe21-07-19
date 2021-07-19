@@ -1,15 +1,25 @@
-package com.mycompany.app;
+package com.mycompany.model;
 
 public class Student {
 
     private int age = 24;
     private String name = "Peter";
+    private String matricultionNumber = "212727";
+
+    public Student() {
+
+    }
+
+    public Student(String name, int age, String matriculationNumb) {
+        this.name = name;
+        this.age = age;
+        this.matricultionNumber = matriculationNumb;
+    }
 
     public void setMatricutionNumber(String matricultionNumber) {
         this.matricultionNumber = matricultionNumber;
     }
 
-    private String matricultionNumber = "212727";
 
     public int getAge() {
         return age;
@@ -44,5 +54,11 @@ public class Student {
 
         return false;
     }
+
+    public String toString() {
+        return getName() + "  " + getAge() + "  " + getMatriculationNumber();
+    }
+
+
 
 }
