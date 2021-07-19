@@ -39,9 +39,9 @@ public class Student {
         return false;
     }
 
-    public static boolean giveAge(String age) {
+    public static boolean giveAge(int age) {
         Student student1 = new Student();
-        if (student1.getAge() == 0) {
+        if (student1.getAge() < 0) {
             System.out.println("bitte name eingeben!");
         }
         return false;

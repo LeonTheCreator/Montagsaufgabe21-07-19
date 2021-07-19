@@ -20,7 +20,7 @@ public class StudentTest {
     @DisplayName("Age cannot be empty!")
     public void ageTest() {
         //GIVEN
-        String age = "";
+        int age = -42;
         //WHEN
         boolean actual = Student.giveAge(age);
         //THEN
